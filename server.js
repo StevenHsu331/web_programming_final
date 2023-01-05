@@ -13,8 +13,9 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 app.use(routes);
+app.use(express.static(path.join(__dirname, "build")));
 app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 const httpServer = http.createServer(app);
 const port = process.env.PORT || 4000;
