@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cors());
 app.use(routes);
 app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "build", "index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 const httpServer = http.createServer(app);
 const port = process.env.PORT || 4000;
