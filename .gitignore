@@ -7,3 +7,5 @@ backend/package-lock.json
 frontend/package-lock.json
 backend/yarn.lock
 frontend/yarn.lock
+node_modules
+yarn.lock

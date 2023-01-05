@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "install:all": "cd frontend && yarn && cd ../backend && yarn",
+    "install:all": "yarn && cd frontend && yarn && cd ../backend && yarn",
     "frontend": "cd frontend && yarn start",
     "backend": "cd backend && yarn server"
   },
