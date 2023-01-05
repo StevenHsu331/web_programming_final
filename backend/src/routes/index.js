@@ -3,7 +3,7 @@ import loginController from './loginController.js';
 import departmentController from './departmentController.js';
 import userController from './userController.js';
 import bulletinController from './bulletinController.js';
-import dayOffController from './DayOffController.js';
+import dayOffController from './dayOffController.js';
 import checkInController from './checkInController.js';
 
 const routes = Router();
