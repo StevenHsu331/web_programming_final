@@ -3,13 +3,7 @@ import axios from '../../api'
 import UserTableRow from './UserTableRow'
 
 const UserTable = ({formOpen}) => {
-    const [userInfos, setUserInfos] = useState([
-        {name: "steven", employeeNum: "00870", departmentName: "PG", isManager: false},
-        {name: "steven", employeeNum: "00870", departmentName: "PG", isManager: false},
-        {name: "steven", employeeNum: "00870", departmentName: "PG", isManager: false},
-        {name: "steven", employeeNum: "00870", departmentName: "PG", isManager: false},
-        {name: "steven", employeeNum: "00870", departmentName: "PG", isManager: false},
-    ]);
+    const [userInfos, setUserInfos] = useState([]);
 
     useEffect(() => {
         const fetchData = async () =>{

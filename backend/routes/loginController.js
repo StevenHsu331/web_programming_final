@@ -48,9 +48,12 @@ loginController.post("/login", async (req, res) => {
     console.log(req.body);
     const employeeNum = req.body.employeeNum;
     const password = req.body.encodedPassword;
-    console.log(process.env.ADMIN_NUMBER);
-    console.log(process.env.ADMIN_PWD)
     if(employeeNum == process.env.ADMIN_NUMBER && password == sha256(process.env.ADMIN_PWD)){
+        setCookie("isLogin", true);
+        setCookie("id", 0);
+        setCookie("auth", 0);
+        setCookie("employeeNum", employeeNum);
+        setCookie("employeeName", admin);
         res.send({
             status: true,
             message: "login successfully.",
