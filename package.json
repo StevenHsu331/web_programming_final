@@ -28,10 +28,6 @@
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
-  "engines": {
-    "node": "19.0.0",
-    "npm": "8.19.2"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
