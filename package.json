@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "yarn && cd frontend && yarn && cd ../backend && yarn",
+
+    "install:all": "yarn && cd frontend && yarn && cd ../backend && yarn",
     "frontend": "cd frontend && yarn start",
-    "start": "cd backend && yarn server",
+    "backend": "cd backend && yarn server",
+    "start": "cd backend && npm server",
+    "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
   "engines": {
