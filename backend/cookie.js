@@ -4,7 +4,7 @@ const cookies = new Cookies();
 
 export const setCookie = (token, value) => {
     cookies.set(token, value, 
-    { path: '/',secure: false, sameSite :true, maxAge: 8640000}
+    { path: '/',secure: true, sameSite :true, maxAge: 8640000}
     );
     console.log(cookies.get(token));
 };
