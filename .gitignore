@@ -3,3 +3,6 @@ package-lock.json
 yarn.lock
 .env
 build
+backend/node_modules
+backend/package-lock.json
+backend/yarn.lock
