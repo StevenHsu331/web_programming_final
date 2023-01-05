@@ -39,8 +39,8 @@ function NewUserForm({formOpen, changeWindowStatus}){
     useEffect(()=>{
         const fetchData = async () =>{
             let departments = await getDepartments();
-            departmentInput.current.value = departments[0].id;
-            setDepartment(departments[0].id);
+            departmentInput.current.value = departments[0].id ? departments[0].id : 1;
+            setDepartment(departments[0].id ? departments[0].id : 1);
             setDepartments(departments);
         }
         fetchData();
