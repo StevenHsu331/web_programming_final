@@ -53,7 +53,7 @@ loginController.post("/login", async (req, res) => {
         setCookie("id", 0);
         setCookie("auth", 0);
         setCookie("employeeNum", employeeNum);
-        setCookie("employeeName", admin);
+        setCookie("employeeName", "admin");
         res.send({
             status: true,
             message: "login successfully.",
