@@ -17,5 +17,9 @@
     "mysql": "^2.18.1",
     "sha256": "^0.2.0",
     "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "yarn": "1.22.19"
   }
 }
