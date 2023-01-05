@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-
     "install:all": "yarn && cd frontend && yarn && cd ../backend && yarn",
     "frontend": "cd frontend && yarn start",
     "backend": "cd backend && yarn server",
@@ -17,6 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "react-scripts": "5.0.1"
   }
 }
